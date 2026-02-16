@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 // MongoDB Connection
-mongoose.connect('mongodb+srv://svidhata28_db_user:FeLX22EYScsljXPq@cluster0.p7qiv.mongodb.net/bustrack?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('mongodb://svidhata28_db_user:FeLX22EYScsljXPq@cluster0-shard-00-00.p7qiv.mongodb.net:27017,cluster0-shard-00-01.p7qiv.mongodb.net:27017,cluster0-shard-00-02.p7qiv.mongodb.net:27017/bustrack?ssl=true&replicaSet=atlas-xxxxxx-shard-0&authSource=admin&retryWrites=true&w=majority')
 .then(() => console.log("✅ Database Connected Successfully!"))
 .catch((err) => console.log("❌ DB Connection Error:", err));
 
