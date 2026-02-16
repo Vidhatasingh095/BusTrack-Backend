@@ -10,8 +10,7 @@ app.use(express.json());
 app.use(cors()); 
 
 // 1. MongoDB Connection
-mongoose.connect('mongodb+srv://svidhata28_db_user:<db_password>@cluster0.ob2o4ni.mongodb.net/?appName=Cluster0')
-<password>FeLX22EYScsljXPq
+mongoose.connect('mongodb+srv://svidhata28_db_user:FeLX22EYScsljXPq@cluster0.p7qiv.mongodb.net/bustrack?retryWrites=true&w=majority')
     .then(() => console.log("✅ Database Connected Successfully!"))
     .catch((err) => console.log("❌ DB Connection Error:", err));
 
